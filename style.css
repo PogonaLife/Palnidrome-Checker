@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1, h4 {
+    color: #333;
+}
+
+div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Ajuste para el ancho completo menos el padding y border */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Hace que el botón se ajuste al ancho total */
+}
+
+#result {
+    font-size: 20px;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+#textContainer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+p {
+    color: #666;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+    input, button {
+        width: auto; /* Vuelve al ancho original en pantallas más grandes */
+        display: inline-block; /* Permite que el input y el botón estén en la misma línea */
+    }
+
+    input {
+        margin-right: 10px; /* Restaura el margen derecho en pantallas más grandes */
+    }
+
+    button {
+        width: auto; /* Ajusta el botón para no ocupar el ancho completo */
+    }
+}
